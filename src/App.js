@@ -1,9 +1,10 @@
 import React from 'react'
-import RegisterPage from './components/RegisterPage/RegisterPage.js'
+// import RegisterPage from './components/RegisterPage/RegisterPage.js'
+import LanguagePage from './components/LanguagePage/LanguagePage.js'
 
 const App = () => {
   return (
-    <><RegisterPage /></>
+    <><LanguagePage /></>
   )
 }
 
