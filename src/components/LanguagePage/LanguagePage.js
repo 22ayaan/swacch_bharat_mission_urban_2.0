@@ -116,7 +116,7 @@ const LanguagePage = () => {
             <button 
               className='dropdown-menu-btn' 
               onClick= {swapDisplay}>
-                Select a language &or;
+                Select a language <div>&or;</div>
             </button>
             <div className='display-el'>
               { display }

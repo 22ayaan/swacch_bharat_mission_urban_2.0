@@ -73,7 +73,7 @@
   color: rgb(93, 115, 212);
   border: 1px solid rgb(93, 115, 212);
   border-radius: 5px;
-  padding: 15px 99px;
+  padding: 15px 10px 15px 99px;
   font-size: 14px;
   font-weight: bold;
   margin: 5px 15px 10px 15px;
@@ -81,4 +81,13 @@
   display: flex;
   flex-direction: row;
   white-space: nowrap;
+  align-items: center;
+}
+
+.dropdown-menu-btn div {
+  padding-left: 80px;
+  padding-right: 0px;
+  font-weight: bolder;
+  font-size: 18px;
+  align-items: center;
 }
