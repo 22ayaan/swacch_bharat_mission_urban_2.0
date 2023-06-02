@@ -14,7 +14,7 @@
  padding: 20px 0px 20px 50px;
 }
 
-.language-container {
+.languagecontainer {
   border-radius: 1rem;
   box-shadow: 0 0px 10px grey;
   height: 656px;
@@ -41,7 +41,7 @@
   margin: 20px;
 }
 
-.desc-wrapper {
+.descwrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +56,7 @@
   line-height: 17px;
 }
 
-.cont-btn {
+.contbtn {
   background-color: rgb(93, 115, 212);
   color: white;
   border: none;
@@ -66,9 +66,23 @@
   font-weight: bold;
   margin: 20px 15px 15px 15px;
   text-align: center;
+  cursor: pointer;
 }
 
-.dropdown-menu-btn {
+.contbtn:disabled {
+  background-color: rgba(79, 162, 217, 0.718);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px 135px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 20px 15px 15px 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dropdownmenubtn {
   background-color: white;
   color: rgb(93, 115, 212);
   border: 1px solid rgb(93, 115, 212);
@@ -84,7 +98,7 @@
   align-items: center;
 }
 
-.dropdown-menu-btn div {
+.dropdownmenubtn div {
   padding-left: 80px;
   padding-right: 0px;
   font-weight: bolder;

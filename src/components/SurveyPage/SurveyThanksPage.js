@@ -1,5 +1,5 @@
 import React from 'react'
-import "./surveyThanksPage.css"
+import "./surveyThanksPage.module.css"
 const SurveyThanksPage = () => {
   return (
     <>

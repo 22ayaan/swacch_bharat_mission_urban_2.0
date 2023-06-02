@@ -1,35 +1,42 @@
 import React from 'react'
-import "./languagePageStyle.css"
+import styles from "./languagePageStyle.module.css"
+import { Link } from 'react-router-dom'
 
 let btnholder = document.getElementById('btn-holder')
 
 const disabledButtonElement = 
-<button 
-  type='submit'
-  id='cont-btn'
-  disabled
-  className='cont-btn'>
-    Continue
-</button>
+<Link to='../GeographicInfoPage'>
+  <button 
+    type='submit'
+    id='cont-btn'
+    disabled
+    className={styles.contbtn}>
+      Continue
+  </button>
+</Link>
+
 
 btnholder = disabledButtonElement
 
 const enabledButtonElement =
-`<button
-  type='submit'
-  id='cont-btn'
-  className='cont-btn'
-  style='background-color: rgb(93, 115, 212);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 20px 135px;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 20px 15px 10px 15px;
-  text-align: center;'>
-    Continue
-</button>`
+`<Link to='../GeographicInfoPage'>
+  <button
+    type='submit'
+    id='cont-btn'
+    className='cont-btn'
+    style='background-color: rgb(93, 115, 212);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 135px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 15px 10px 15px;
+    text-align: center;
+    cursor: pointer;'>
+      Continue
+  </button>
+</Link>`
 
 function swapDisplay() {
   display = langOptions
@@ -38,44 +45,44 @@ function swapDisplay() {
 }
 
 const langOptions = `<div className='lang-opt' >
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='english' name='lang' value='english' />
-    <label for='english'>English</label>
+    <label for='english' style="cursor: pointer;">English</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='gujarati' name='lang' value='gujarati' />
-    <label for='gujarati'>Gujarati</label>
+    <label for='gujarati' style="cursor: pointer;">Gujarati</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='hindi' name='lang' value='hindi' />
-    <label for='hindi'>Hindi</label>
+    <label for='hindi' style="cursor: pointer;">Hindi</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='kannada' name='lang' value='kannada' />
-    <label for='kannada'>Kannada</label>
+    <label for='kannada' style="cursor: pointer;">Kannada</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='malayalam' name='lang' value='malayalam' />
-    <label for='malayalam'>Malayalam</label>
+    <label for='malayalam' style="cursor: pointer;">Malayalam</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='marathi' name='lang' value='marathi' />
-    <label for='marathi'>Marathi</label>
+    <label for='marathi' style="cursor: pointer;">Marathi</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='odiya' name='lang' value='odiya' />
-    <label for='odiya'>Odiya</label>
+    <label for='odiya' style="cursor: pointer;">Odiya</label>
   </div>
-  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px;">
+  <div style="display: block; background-color: rgba(228, 245, 250, 0.627); margin: 5px 15px; padding: 15px 10px; border: none; border-radius: 5px; cursor: pointer;">
     <input type='checkbox' id='punjabi' name='lang' value='punjabi' />
-    <label for='punjabi'>Punjabi</label>
+    <label for='punjabi' style="cursor: pointer;">Punjabi</label>
   </div>
 </div>`
 
 const desc = <div className='replacable'>
-  <p className='subtext'>NOT SELECTED</p>
-  <div className='desc-wrapper'>
-    <p className='desc'>
+  <p className={styles.subtext}>NOT SELECTED</p>
+  <div className={styles.descwrapper}>
+    <p className={styles.desc}>
       Swachh Survekshan 2023 is a survey conducted
       by the Government of India's Ministry of Housing
       and Urban Affairs (MoHUA) it covers every
@@ -104,17 +111,17 @@ let display = desc
 const LanguagePage = () => {
   return (
     <>
-      <div className='container'>
-        <div className='heading'>
+      <div className={styles.container}>
+        <div className={styles.heading}>
           Swacch Bharat Mission Urban 2.0
         </div>
-        <div className='language-container'>
-          <div className='content-wrapper'>
-            <div className='header'>
+        <div className={styles.languagecontainer}>
+          <div className={styles.contentwrapper}>
+            <div className={styles.header}>
               <p>LANGUAGE</p>
             </div>
             <button 
-              className='dropdown-menu-btn' 
+              className={styles.dropdownmenubtn}
               onClick= {swapDisplay}>
                 Select a language <div>&or;</div>
             </button>

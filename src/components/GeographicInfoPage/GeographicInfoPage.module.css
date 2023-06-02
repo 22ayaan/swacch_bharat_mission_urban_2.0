@@ -12,15 +12,15 @@
   border-radius: 1rem;
   box-shadow: 0 0px 10px grey;
   height: 656px;
-  margin-top: 2rem;
   opacity: 1;
   padding: 0px;
   width: 360px;
+  display: flex;
   margin: auto;
-  margin-top: 20px;
+  flex-direction: column;
 }
 .content-wrapper {
-  margin: 40px 20px 0px 20px;
+  margin: 0px 18px 0px 18px;
 }
 
 .subheading {
@@ -29,7 +29,6 @@
   font-weight: 600;
   text-align: left;
   margin-top: 20px;
-  padding-top: 20px;
 }
 
 select {
@@ -60,6 +59,7 @@ select:hover {
 
 .age-section p {
   padding-top: 0px;
+  margin-top: 20px;
 }
 
 .less-60 {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './GeographicInfoPage.css'
+import './GeographicInfoPage.module.css'
 
 const GeographicInfoPage = () => {
   return (

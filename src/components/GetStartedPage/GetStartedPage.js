@@ -1,5 +1,5 @@
 import React from 'react'
-import './getStartedPage.css'
+import './getStartedPage.module.css'
 import image from './logo.png'
 const GetStartedPage = () => {
   return (
