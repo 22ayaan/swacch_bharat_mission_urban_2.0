@@ -19,7 +19,7 @@
   margin: auto;
   flex-direction: column;
 }
-.content-wrapper {
+.contentwrapper {
   margin: 0px 18px 0px 18px;
 }
 
@@ -57,13 +57,22 @@ select:hover {
   color: white;
 }
 
-.age-section p {
-  padding-top: 0px;
+.agesection p {
   margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
-.less-60 {
-  width: 50%;
+.btns {
+  margin-top: 0px;
+  
+}
+
+.less60 {
+  width: 49%;
+  max-height: 50px;
   background-color: white;
   color: rgb(93, 115, 212);
   border: 1px solid rgb(93, 115, 212);
@@ -71,12 +80,14 @@ select:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 0px;
-  padding: 5px 0px;
-  margin-right: 1px;
-  font-size: 12px;
+  padding: 10px 0px;
+  margin-right: -15px;
+  font-size: 13px;
+  margin-left: 0px;
+  margin-top: 20px;
 }
 
-.more-60 {
+.more60 {
   width: 49%;
   background-color: rgba(203, 209, 236, 0.44);;
   color: rgb(93, 115, 212);
@@ -85,17 +96,19 @@ select:hover {
   border-top-right-radius: 5px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 5px;
-  padding: 5px 0px;
-  font-size: 12px;
+  padding: 10px 0px;
+  font-size: 13px;
+  margin-right: 0px;
+  margin-top: 0px;
 }
 
-.more-60:hover {
+.more60:hover {
   cursor: pointer;
   background-color: rgba(138, 151, 212, 0.529);
   color: rgb(93, 115, 212);
 }
 
-.less-60:hover {
+.less60:hover {
   cursor: pointer;
   background-color: rgba(203, 209, 236, 0.44);
   color: rgb(93, 115, 212);
@@ -104,64 +117,66 @@ select:hover {
   background-color: rgb(93, 115, 212);
   color: white;
 }
-.more-60:active {
+.more60:active {
   background-color: rgb(93, 115, 212);
   color: white;
 }
 
-.consent-section {
-  margin-top: 185px;
+.consentsection {
+  margin-top: 175px;
   background-color: whitesmoke;
   padding: 20px;
   border-radius: 5px;
   text-align: left;
+  margin-bottom: 0px;
 }
 
-.start-btn {
+.startbtn {
   width: 100%;
   background-color: rgb(93, 115, 212);
   color: white;
   border: 1px solid rgb(93, 115, 212);
   border-radius: 5px;
   padding: 15px 0px;
-  margin-top: 20px;
+  margin-top: 15px;
   font-size: 14px;
   font-weight: bold;
+  margin-left: 0px;
 }
 
-.start-btn:disabled {
+.startbtn:disabled {
   width: 100%;
   background-color: rgba(95, 114, 198, 0.517);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 15px 0px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 14px;
   font-weight: bold;
 }
 
-.start-btn:hover:enabled {
+.startbtn:hover:enabled {
   cursor: pointer;
   background-color: rgba(128, 144, 219, 0.654);
   color: white;
   border: 1px solid rgb(93, 115, 212);
 }
 
-.start-btn:active:enabled {
+.startbtn:active:enabled {
   background-color: white;
   color: rgb(93, 115, 212);
 }
-.consent-text {
+.consenttext {
   font-size: 14px;
   padding-left: 20px;
   text-align: center;
 }
 
-.consent-section input, .consent-section span {
+.consentsection input, .consentsection span {
   cursor: pointer;
 }
 
-.consent-section input[type='radio'] {
+.consentsection input[type='radio'] {
   transform: scale(2.5);
 }

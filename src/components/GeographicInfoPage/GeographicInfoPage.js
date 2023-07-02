@@ -1,21 +1,22 @@
 import React from 'react'
-import './GeographicInfoPage.module.css'
+import styles from './GeographicInfoPage.module.css'
+import { Link } from 'react-router-dom'
 
 const GeographicInfoPage = () => {
   return (
     <>
-      <div className='header'>
+      <div className={styles.header}>
         <p>
           Swacch Bharat Mission Urban 2.0
         </p>
       </div>
-      <div className='container'>
-        <div className='content-wrapper'>
-          <div className='geo-section'>
-            <div className='state sect'>
-              <p className='subheading'>Location</p>
-              <label for='state el'>
-                <select id='state el' className='state el'>
+      <div className={styles.container}>
+        <div className={styles.contentwrapper}>
+          <div className={styles.geosection}>
+            <div className={styles.statesect}>
+              <p className={styles.subheading}>Location</p>
+              <label for={styles.stateel}>
+                <select id='stateel' className={styles.stateel}>
                   <option value=''>State</option>
                   <option value='bihar'>Bihar</option>
                   <option value='up'>Uttar Pradesh</option>
@@ -28,9 +29,9 @@ const GeographicInfoPage = () => {
                 </select>
               </label>
             </div>
-            <div className='district sect'>
+            <div className={styles.districtsect}>
               <label for='district el'>
-                <select id='district el' className='district el'>
+                <select id='district el' className={styles.districtel}>
                   <option value=''>District</option>
                   <option value='patna'>Patna</option>
                   <option value='gaya'>Gaya</option>
@@ -40,9 +41,9 @@ const GeographicInfoPage = () => {
                 </select>
               </label>
             </div>
-            <div className='city sect'>
+              <div className={styles.citysect}>
               <label for='city el'>
-                <select id='city el' className='city el'>
+                <select id='city el' className={styles.cityel}>
                   <option value=''>City</option>
                   <option value='patna'>Patna</option>
                   <option value='gaya'>Gaya</option>
@@ -52,9 +53,9 @@ const GeographicInfoPage = () => {
                 </select>
               </label>
             </div>
-            <div className='neighborhood sect'>
+            <div className={styles.neighborhoodsect}>
               <label for='neighborhood el'>
-                <select id='neighborhood el' className='neighborhood el'>
+                <select id='neighborhood el' className={styles.neighborhoodel}>
                   <option value=''>Neighborhood</option>
                   <option value='entally'>Entally</option>
                   <option value='ballygunge'>Ballygunge</option>
@@ -65,31 +66,28 @@ const GeographicInfoPage = () => {
               </label>
             </div>
           </div>
-          <div className='age-section'>
-            <p className='subheading'>Age Range</p>
-            <div className='btns'>
-              <button className='less-60' type='submit'>Below 60</button>
-              <button className='more-60' type='submit'>Above 60</button>
+          <div className={styles.agesection}>
+            <p className={styles.subheading}>Age Range</p>
+            <div className={styles.btns}>
+              <button className={styles.less60} type='submit'  >Below 60</button>
+              <button className={styles.more60} type='submit' >Above 60</button>
             </div>
           </div>
-          <div className='consent-section'>
+          <div className={styles.consentsection}>
             <label for='consent-btn'>
-              <input type='radio' id='consent-btn' className='consent-btn' value='consent-btn' required onClick={() => {
-                  document.querySelector('.start-btn').disabled = false;                
-              }}/>
-              <span className='consent-text'>I am at least 15 years old.</span>
+              <input type='radio' id='consent-btn' className={styles.consentbtn} value='consent-btn' required/>
+              <span className={styles.consenttext}>I am at least 15 years old.</span>
             </label>
           </div>
-          <div className='start-survey-btn'>
-            <button type='submit' className='start-btn' disabled>Start Survey</button>
+          <div className={styles.startsurveybtn}>
+            <Link to="/survey">
+             <button type='submit' className={styles.startbtn} >Start Survey</button>
+            </Link>
           </div>
         </div>
       </div>
     </>
   )
 }
-window.addEventListener("DOMContentLoaded", () => {
-  document.querySelector('.start-btn').disabled = true;
-})
 
 export default GeographicInfoPage

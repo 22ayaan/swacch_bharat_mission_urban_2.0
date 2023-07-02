@@ -1,25 +1,28 @@
 import React from 'react'
-import "./surveyThanksPage.module.css"
+import styles from "./surveyThanksPage.module.css"
+import { Link } from 'react-router-dom'
 const SurveyThanksPage = () => {
   return (
     <>
-      <div className='header'>
+      <div className={styles.header}>
         <p>
           Swachh Bharat Mission Urban 2.0
         </p>
       </div>
-      <div className='container'>
-        <div className='content-wrapper'>
-          <div className='subheading'>
+      <div className={styles.container}>
+        <div className={styles.contentwrapper}>
+          <div className={styles.subheading}>
             <p>Thank You!</p>
           </div>
-          <div className='image'>
+          <div className={styles.image}>
             <img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_xixAoveZ_rgMHSKXCGs-IBhk9G8KM_YjStIXoB21T22j0ufy' alt='Thank You' />
           </div>
-          <p className='desc'>
+          <p className={styles.desc}>
             Your participation is helping to make our country cleaner and better.
           </p>
-          <button className='close-btn' type='submit'>Close</button>
+          <Link to='/'>
+           <button className={styles.closebtn} type='submit'>Close</button>
+          </Link>
         </div>
       </div>
     </>

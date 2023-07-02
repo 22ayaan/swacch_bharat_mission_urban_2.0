@@ -21,7 +21,7 @@
 }
 
 .contentwrapper {
-  margin: 0px 2px;
+  margin: 0px 18px;
 }
 
 .heading p {
@@ -37,9 +37,9 @@
   color: rgb(93, 115, 212);
   border: 1px solid rgb(93, 115, 212);
   border-radius: 5px;
-  padding: 15px 10px 15px 99px;
+  padding: 10px 15px 10px 90px;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 5px 15px 10px 15px;
   text-align: center;
   display: flex;
@@ -63,51 +63,39 @@
   text-decoration: none;
 }
 
-.optbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0px 22px;
+.subtext p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.descwrapper {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.desc {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin: 0px 15px;
   padding: 10px 0px;
 }
 
-.optbox div {
-  background-color: whitesmoke;
-  border: none;
-  width: 100%;
-  padding: 15px 0px 15px 15px;
-  margin-bottom: 5px;
-  margin-left: 15px;
-  margin-right: 15px;
-  border: none;
-  border-radius: 5px;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.optbox div label {
-  padding-left: 10px;
-  cursor: pointer;
-}
-
-.contbtn {
-  background-color: rgb(93, 115, 212);
+.contbtn:disabled {
+  background-color: rgba(93, 115, 212, 0.452);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 20px 10px;
+  width: 323px;
   font-size: 14px;
   font-weight: bold;
-  margin: 0px 15px 5px 15px;
+  margin: 80px 0px 10px 0px;
   text-align: center;
-  align-items: center; 
-  cursor: pointer;
-}
-
-.contbtn:hover {
-  background-color: rgba(93, 115, 212, 0.218);
-  color: rgb(93, 115, 212);
-  border: 1px solid rgb(93, 115, 212);
+  cursor: not-allowed;
 }

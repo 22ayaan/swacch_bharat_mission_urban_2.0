@@ -1,0 +1,115 @@
+.header p {
+  background-color: rgb(93, 115, 212);
+  color: white;
+  margin-top: 0px;
+  padding: 20px 0px 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: 600;
+}
+
+.container {
+  border-radius: 1rem;
+  box-shadow: 0 0px 10px #80808061;
+  height: 656px;
+  opacity: 1;
+  padding: 0px;
+  width: 360px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  margin: 0px 18px 0px 18px;
+}
+
+.heading p {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subheading p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+.descwrap {
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.desc {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  text-align: left;
+  margin: 0px 15px;
+  padding: 1px 0px;
+}
+
+.text p {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.qrcode {
+  width: 50%;
+  align-items: center;
+  margin: auto;
+}
+
+.qrcode:hover {
+  background-color: rgb(93, 133, 212);
+}
+
+.gettext p {
+  font-size: 13.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gettext {
+  margin-top: 40px;
+  margin-bottom: -5px;
+}
+
+.getapp p {
+  font-size: 13.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.iosbtn {
+  background-color: rgba(93, 133, 212, 0.227);
+  border: none;
+  margin-top: 35px;
+  width: 49%;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(93, 115, 212);
+  font-weight: 500;
+  cursor: not-allowed;
+}
+
+.androidbtn {
+  background-color: rgba(93, 133, 212, 0.227);
+  border: none;
+  margin-top: 35px;
+  width: 48%;
+  margin-right: 0px;
+  margin-left: 9.5px;
+  color: rgb(93, 115, 212);
+  font-weight: 500;
+  cursor: not-allowed;
+}

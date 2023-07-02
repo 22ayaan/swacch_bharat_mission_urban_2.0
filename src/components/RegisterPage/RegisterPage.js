@@ -1,55 +1,57 @@
 import React from 'react'
-import "./registerPage.module.css"
-
+import styles from "./registerPage.module.css"
+import { Link } from 'react-router-dom'
 const RegisterPage = () => {
   return (
     <>
-      <h3 className="header-register">Swacch Bharat Mission Urban 2.0</h3>
-      <div className="register-container">
-        <div className="register-wrap">
-          <div className='top-wrap'>
-            <div className="register">
-              <p className='heading'>REGISTER</p>
-              <p className='sub-heading'>Get Free Passwordless Authentication</p>
+      <h3 className={styles.headerregister}>Swacch Bharat Mission Urban 2.0</h3>
+      <div className={styles.registercontainer}>
+        <div className={styles.registerwrap}>
+          <div className={styles.topwrap}>
+            <div className={styles.register}>
+              <p className={styles.heading}>REGISTER</p>
+              <p className={styles.subheading}>Get Free Passwordless Authentication</p>
             </div>
-            <div className="register-paragraph-description">
+            <div className={styles.registerparagraphdescription}>
               <p>
                 The Avatar App gives you free access to a secure and private passwordless authentication system. You can use the Avatar app to register without a password on any compatible service. 
                 To learn more, visit{" "}
                 <a href="https://avatar.me" target="_blank" rel='noreferrer'>https://avatar.me</a>
               </p>
             </div>
-            <button className='avatar-app-continue-btn'>Continue with Avatar App</button>      
+            <Link to='/login'>
+              <button className={styles.avatarappcontinuebtn}>Continue with Avatar App</button>
+            </Link>      
           </div>
-          <hr className='register-partition'></hr>
-          <div className='bottom-wrap'>
-            <div className='sub-heading'>
+          <hr className={styles.registerpartition}></hr>
+          <div className={styles.bottomwrap}>
+            <div className={styles.subheading}>
               <p>
                 Or use the traditional system
               </p>
             </div>
-            <div className='otp-wrap'>
-              <p className='otp-desc'>
+            <div className={styles.otpwrap}>
+              <p className={styles.otpdesc}>
                 Share your mobile number with us and we will send you an OTP
                 to verify your number.
               </p>
             </div>
-            <div className='form'>
-              <div className='contact-input-wrap'>
-                <label htmlFor='mobilenum' className='contact-input-label'>
+            <div className={styles.form}>
+              <div className={styles.contactinputwrap}>
+                <label htmlFor='mobilenum' className={styles.contactinputlabel}>
                   Mobile Number
                 </label>
                 <input 
                   type='tel'
                   id='mobilenum'
-                  className='contact-input-field'
+                  className={styles.contactinputfield}
                   minLength={10}
                   maxLength={12}
                   required
                 />
               </div>
             </div>
-            <button className='validate-btn'>
+            <button className={styles.validatebtn}>
               Validate
             </button>
           </div>

@@ -1,4 +1,4 @@
-.header-register {
+.headerregister {
   background-color: rgb(93, 115, 212);
   color: white;
   margin-top: 0px;
@@ -7,7 +7,7 @@
   font-size: large;
 }
 
-.register-wrap {
+.registerwrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,30 +16,30 @@
   margin-top: 40px;
 }
 
-.top-wrap {
+.topwrap {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.register-paragraph-description {
+.registerparagraphdescription {
   height: 100px;
   width: 300px;
   font-size: 14px;
   text-align: left;
   background-color: whitesmoke;
-  padding: 0px 15px 15px 15px;
+  padding: 0px 15px 30px 15px;
   border-radius: 10px;
 }
 
-.register-partition {
+.registerpartition {
   width: 100%;
   border-top: 2px solid lightgray;
   margin: 10px 0px 10px 0px;
   border-radius: 10px;
 }
 
-.register-container {
+.registercontainer {
   border-radius: 1rem;
   box-shadow: 0 0px 10px grey;
   height: 656px;
@@ -57,26 +57,26 @@
   text-align: center;
 }
 
-.sub-heading {
+.subheading {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
 
-.bottom-wrap {
+.bottomwrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
 }
 
-.otp-wrap {
+.otpwrap {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.otp-desc {
+.otpdesc {
   background-color: whitesmoke;
   border-radius: 5px;
   text-align: left;
@@ -90,7 +90,7 @@
   gap: 15px;
 }
 
-.contact-input-wrap {
+.contactinputwrap {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -99,7 +99,7 @@
   padding-bottom: 100px;
 }
 
-.contact-input-label {
+.contactinputlabel {
   font-size: 14px;
   font-weight: 600;
   text-align: left;
@@ -107,7 +107,7 @@
   padding-top: 20px;
 }
 
-.contact-input-field {
+.contactinputfield {
   height: 60px;
   font-size: 14px;
   font-weight: 500;
@@ -116,7 +116,7 @@
   padding: 10px;
 }
 
-.validate-btn {
+.validatebtn {
   background-color: rgb(93, 115, 212);
   color: white;
   font-size: 18px;
@@ -126,17 +126,20 @@
   border: none;
   margin-bottom: 10px;
   width: 100%;
+  margin-top: -15px;
+  cursor: not-allowed;
 }
 
-.avatar-app-continue-btn {
+.avatarappcontinuebtn {
   margin-top: 10px;
-  background-color: rgb(93, 115, 212);
-  color: white;
-  font-size: 18px;
-  font-weight: bolder;
-  padding: 15px;
+  background-color: inherit;
+  color: rgb(93, 115, 212);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 55px;
   border-radius: 5px;
-  border: none;
+  border: 1px solid rgb(93, 115, 212);
   margin-bottom: 10px;
   width: 100%;
+  margin-left: 0px;
 }

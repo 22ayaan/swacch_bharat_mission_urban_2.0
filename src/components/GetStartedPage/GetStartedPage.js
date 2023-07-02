@@ -1,36 +1,40 @@
 import React from 'react'
-import './getStartedPage.module.css'
+import styles from './getStartedPage.module.css'
 import image from './logo.png'
+import { Link } from 'react-router-dom'
+
 const GetStartedPage = () => {
   return (
     <>
-      <div className='header'>
+      <div className={styles.header}>
         <p>
           Swachh Bharat Mission Urban 2.0
         </p>
       </div>
-      <div className='container'>
-        <div className='content-wrapper'>
-          <div className='glasses-img'>
+      <div className={styles.container}>
+        <div className={styles.contentwrapper}>
+          <div className={styles.glassesimg}>
             <img src='https://thewire.in/wp-content/uploads/2017/10/swach.jpg' alt='none' />
           </div>
-          <div className='heading'>
-            <p className='swachh'>SWACHH</p>
-            <p className='survekshan'>SURVEKSHAN</p>
-            <p className='year'>2023</p>
+          <div className={styles.heading}>
+            <p className={styles.swachh}>SWACHH</p>
+            <p className={styles.survekshan}>SURVEKSHAN</p>
+            <p className={styles.year}>2023</p>
           </div>
-          <div className='flag-img'>
+          <div className={styles.flagimg}>
             <img src={image} alt='none' />
           </div>
-          <div className='desc'>
-            <p className='top-text'>
+          <div className={styles.desc}>
+            <p className={styles.toptext}>
               Ministry of Housing and Urban Affairs 
             </p>
-            <p className='bottom-text'>
+            <p className={styles.bottomtext}>
               Government of India
             </p>
           </div>
-          <button className='start-btn' type='submit'>Get Started</button>
+          <Link to='/register'>
+            <button className={styles.startbtn} type='submit'>Get Started</button>
+          </Link>
         </div>
       </div>
     </>
