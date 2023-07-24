@@ -6,11 +6,6 @@ import { Link } from 'react-router-dom'
 const GetStartedPage = () => {
   return (
     <>
-      <div className={styles.header}>
-        <p>
-          Swachh Bharat Mission Urban 2.0
-        </p>
-      </div>
       <div className={styles.container}>
         <div className={styles.contentwrapper}>
           <div className={styles.glassesimg}>

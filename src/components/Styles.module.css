@@ -1,0 +1,30 @@
+.heading {
+  padding: 10px;
+  margin-bottom: 25px;
+  background-color: #137cce;
+ }
+
+.subHeading {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  margin-left: 30px;
+}
+
+.btn {
+  background-color: #137cce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px 0px;
+  cursor: pointer;
+  margin: 0px;
+ }
+
+.btn:hover {
+  background-color: #137dce16;
+  color: #137cce;
+  border: 1px solid #137cce;
+}
