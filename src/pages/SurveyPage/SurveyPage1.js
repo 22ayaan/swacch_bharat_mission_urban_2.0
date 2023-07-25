@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./surveyPage1.module.css";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import Button from "../../components/Button";
 const SurveyPage1 = () => {
   return (
     <>
@@ -68,9 +69,7 @@ const SurveyPage1 = () => {
             </div>
           </div>
           <Link to="/thanks">
-            <button className={styles.submitbtn} type="submit">
-              Submit
-            </button>
+            <Button className="submitBtn" text="Submit"></Button>
           </Link>
         </div>
       </div>

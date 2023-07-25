@@ -49,9 +49,24 @@ const RegisterPage = () => {
                 <input
                   type="tel"
                   id="mobilenum"
+                  pattern="[0-9]"
                   className={styles.contactinputfield}
                   minLength={10}
                   maxLength={12}
+                  required
+                />
+              </div>
+              <div className={styles.contactinputwrap}>
+                <label htmlFor="mobilenum" className={styles.contactinputlabel}>
+                  OTP
+                </label>
+                <input
+                  type="tel"
+                  id="otp"
+                  pattern="[0-9]"
+                  className={styles.contactinputfield}
+                  minLength={4}
+                  maxLength={4}
                   required
                 />
               </div>

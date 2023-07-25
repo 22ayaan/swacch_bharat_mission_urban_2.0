@@ -1,13 +1,3 @@
-.header p {
-  background-color: rgb(93, 115, 212);
-  color: white;
-  margin-top: 0px;
-  padding: 20px 0px 20px 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  font-weight: 600;
-}
-
 .container {
   border-radius: 1rem;
   box-shadow: 0 0px 10px grey;
@@ -19,12 +9,13 @@
   margin: auto;
   flex-direction: column;
 }
+
 .contentwrapper {
   margin: 0px 18px 0px 18px;
 }
 
 .subheading {
-  font-size: 14px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-align: left;
@@ -33,32 +24,35 @@
 
 select {
   width: 100%;
-  height: 40px;
+  height: 45px;
   border-radius: 5px;
-  border: 1px solid rgb(93, 115, 212);
+  border: 1px solid #137cce;
   padding: 5px;
-  margin: 5px 0px 5px 0px;
+  margin: 5px 0px 13px 0px;
   font-size: 12px;
   font-weight: 600;
-  color: rgb(93, 115, 212);
+  color: #137cce;
   background-color: white;
   text-align: center;
-  background: url('./arrow.png') no-repeat;
+  background: url('../../assets/arrow.png') no-repeat;
   background-position: 95% 50%;
   background-size: 4%;
   -moz-appearance: none; 
   -webkit-appearance: none; 
   appearance: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 select:hover {
   cursor: pointer;
-  background-color: rgb(93, 115, 212);
+  background-color: #137cce;
   color: white;
 }
 
 .agesection p {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0px;
   padding-bottom: 0px;
   display: flex;
@@ -66,76 +60,68 @@ select:hover {
 }
 
 .btns {
-  margin-top: 0px;
-  
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
 }
 
 .less60 {
-  width: 49%;
-  max-height: 50px;
-  background-color: white;
-  color: rgb(93, 115, 212);
-  border: 1px solid rgb(93, 115, 212);
+  width: 50%;
+  border: 1px solid #137cce;
+  background-color: inherit;
   border-top-left-radius: 5px;
-  border-top-right-radius: 0px;
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 0px;
-  padding: 10px 0px;
-  margin-right: -15px;
-  font-size: 13px;
-  margin-left: 0px;
-  margin-top: 20px;
+  border-right: none;
+  color: #137cce;
+  height: 35px;
 }
 
 .more60 {
-  width: 49%;
-  background-color: rgba(203, 209, 236, 0.44);;
-  color: rgb(93, 115, 212);
-  border: 1px solid rgb(93, 115, 212);
-  border-top-left-radius: 0px;
+  width: 50%;
+  border: 1px solid #137cce;
+  background-color: #137dce27;
   border-top-right-radius: 5px;
-  border-bottom-left-radius: 0px;
   border-bottom-right-radius: 5px;
-  padding: 10px 0px;
-  font-size: 13px;
-  margin-right: 0px;
-  margin-top: 0px;
+  color: #137cce;
+  height: 35px;
 }
 
 .more60:hover {
   cursor: pointer;
   background-color: rgba(138, 151, 212, 0.529);
-  color: rgb(93, 115, 212);
+  color: #137cce;
 }
 
 .less60:hover {
   cursor: pointer;
   background-color: rgba(203, 209, 236, 0.44);
-  color: rgb(93, 115, 212);
+  color: #137cce;
 }
 .less-60:active {
-  background-color: rgb(93, 115, 212);
+  background-color: #137cce;
   color: white;
 }
 .more60:active {
-  background-color: rgb(93, 115, 212);
+  background-color: #137cce;
   color: white;
 }
 
 .consentsection {
-  margin-top: 175px;
-  background-color: whitesmoke;
-  padding: 20px;
+  margin-top: 113px;
+  background-color: rgb(191, 237, 239);
+  padding: 30px 30px 30px 20px;
   border-radius: 5px;
   text-align: left;
-  margin-bottom: 0px;
+  margin-bottom: 12px;
+  align-items: center;
+  justify-content: center;
 }
 
 .startbtn {
   width: 100%;
-  background-color: rgb(93, 115, 212);
+  background-color: #137cce;
   color: white;
-  border: 1px solid rgb(93, 115, 212);
+  border: 1px solid #137cce;
   border-radius: 5px;
   padding: 15px 0px;
   margin-top: 15px;
@@ -146,7 +132,7 @@ select:hover {
 
 .startbtn:disabled {
   width: 100%;
-  background-color: rgba(95, 114, 198, 0.517);
+  background-color: #137dce2b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -158,25 +144,26 @@ select:hover {
 
 .startbtn:hover:enabled {
   cursor: pointer;
-  background-color: rgba(128, 144, 219, 0.654);
+  background-color: #137dce34;
   color: white;
-  border: 1px solid rgb(93, 115, 212);
+  border: 1px solid #137cce;
 }
 
 .startbtn:active:enabled {
   background-color: white;
-  color: rgb(93, 115, 212);
+  color: #137cce;
 }
 .consenttext {
-  font-size: 14px;
-  padding-left: 20px;
+  font-size: 15px;
   text-align: center;
+  padding-left: 15px;
 }
 
 .consentsection input, .consentsection span {
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .consentsection input[type='radio'] {
-  transform: scale(2.5);
+  transform: scale(3.3);
 }

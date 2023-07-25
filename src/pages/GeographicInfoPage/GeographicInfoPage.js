@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./GeographicInfoPage.module.css";
 import { Link } from "react-router-dom";
+import Button from "../../components/Button";
 
 const GeographicInfoPage = () => {
   return (
@@ -88,9 +89,7 @@ const GeographicInfoPage = () => {
           </div>
           <div className={styles.startsurveybtn}>
             <Link to="/survey">
-              <button type="submit" className={styles.startbtn}>
-                Start Survey
-              </button>
+              <Button className="startBtn" text="Start Survey"></Button>
             </Link>
           </div>
         </div>

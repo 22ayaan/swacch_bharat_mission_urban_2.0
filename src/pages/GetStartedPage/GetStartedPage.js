@@ -1,7 +1,9 @@
-import React from 'react'
-import styles from './getStartedPage.module.css'
-import image from './logo.png'
-import { Link } from 'react-router-dom'
+import React from "react";
+import styles from "./getStartedPage.module.css";
+import image from "../../assets/logo.png";
+import glasses from "../../assets/glasses.jpeg";
+import { Link } from "react-router-dom";
+import Button from "../../components/Button";
 
 const GetStartedPage = () => {
   return (
@@ -9,7 +11,7 @@ const GetStartedPage = () => {
       <div className={styles.container}>
         <div className={styles.contentwrapper}>
           <div className={styles.glassesimg}>
-            <img src='https://thewire.in/wp-content/uploads/2017/10/swach.jpg' alt='none' />
+            <img src={glasses} alt="none" />
           </div>
           <div className={styles.heading}>
             <p className={styles.swachh}>SWACHH</p>
@@ -17,23 +19,23 @@ const GetStartedPage = () => {
             <p className={styles.year}>2023</p>
           </div>
           <div className={styles.flagimg}>
-            <img src={image} alt='none' />
+            <img src={image} alt="none" />
           </div>
           <div className={styles.desc}>
             <p className={styles.toptext}>
-              Ministry of Housing and Urban Affairs 
+              Ministry of Housing and Urban Affairs
             </p>
-            <p className={styles.bottomtext}>
-              Government of India
-            </p>
+            <p className={styles.bottomtext}>Government of India</p>
           </div>
-          <Link to='/register'>
-            <button className={styles.startbtn} type='submit'>Get Started</button>
-          </Link>
+          <div className={styles.startBtn}>
+            <Link to="/register">
+              <Button className="startBtn" text="Get Started"></Button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default GetStartedPage
+export default GetStartedPage;

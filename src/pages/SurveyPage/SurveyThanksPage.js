@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./surveyThanksPage.module.css";
 import { Link } from "react-router-dom";
+import Button from "../../components/Button";
 const SurveyThanksPage = () => {
   return (
     <>
@@ -19,11 +20,11 @@ const SurveyThanksPage = () => {
             Your participation is helping to make our country cleaner and
             better.
           </p>
-          <Link to="/">
-            <button className={styles.closebtn} type="submit">
-              Close
-            </button>
-          </Link>
+          <div className={styles.btnDiv}>
+            <Link to="/">
+              <Button className="closeBtn" text="Close"></Button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
