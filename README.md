@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Swacch Bharat Mission Urban 2.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A survey that gathers citizen’s feedback on the sanitation of their respective regions in India. Uses React as the frontend and Node as the backend. Uses third part facial recognition based authnetication system - [Avatar](https://www.avatar.me/). 
+
+Check out the development build of the webiste [here](https://xd.adobe.com/view/84a1803c-7cc4-480b-a3a0-bc7b10b6d222-d1f2/screen/396dd514-4db7-438e-81fb-95caf027da73?fullscreen)
+
+### Here's some snippets of the project:
+<img width="969" alt="Screenshot 2023-10-23 at 8 13 07 AM" src="https://github.com/user-attachments/assets/da7e4840-d874-4352-9d33-01a831e6fd28">
+<img width="969" alt="Screenshot 2023-10-23 at 8 13 14 AM" src="https://github.com/user-attachments/assets/38f17d3f-0ce5-4d18-b328-965c99576ce5">
+<img width="969" alt="Screenshot 2023-10-23 at 8 13 31 AM" src="https://github.com/user-attachments/assets/8058041a-4eca-430f-be4b-ce685a561059">
+<img width="969" alt="Screenshot 2023-10-23 at 8 13 47 AM" src="https://github.com/user-attachments/assets/3d5ba45c-4c63-419f-9822-f07d75ba395f">
+<img width="969" alt="Screenshot 2023-10-23 at 8 14 11 AM" src="https://github.com/user-attachments/assets/430b4a7e-f616-4ca1-9143-dfe7d5ee1ba2">
+<img width="969" alt="Screenshot 2023-10-23 at 8 06 13 AM" src="https://github.com/user-attachments/assets/64063bee-a679-4dbf-9c7c-39bcd33b439a">
+<img width="969" alt="Screenshot 2023-10-23 at 8 06 27 AM" src="https://github.com/user-attachments/assets/08f07379-2215-43a7-9c7c-4b26ff8b115e">
+
+---
 
 ## Available Scripts
 
@@ -26,45 +39,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
